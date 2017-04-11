@@ -4,10 +4,12 @@ import math
 import SwervDrone
 
 def main():
-
+	print "Should be running"
 	drone = SwervDrone()
+	drone.obtainControl()
+	drone.arm()
 
 
-def __init__(self):
-	self.main()
+if __name__ == "__main__":
+    main()
 
