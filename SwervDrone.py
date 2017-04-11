@@ -7,7 +7,7 @@ import time
 import sys
 import math
 
-class SwervDrone:
+class Drone:
 	
     def __init__(self):
         self.drone = DJIDrone()

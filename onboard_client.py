@@ -1,11 +1,11 @@
 import time
 import sys
 import math
-import SwervDrone
+from SwervDrone import Drone
 
 def main():
 	print "Should be running"
-	drone = SwervDrone()
+	drone = Drone()
 
 
 if __name__ == "__main__":
