@@ -11,21 +11,30 @@ class SwervDrone:
 	
     def __init__(self):
         self.drone = DJIDrone()
-        self.drone.request_sdk_permission_control()
+        self.obtainControl()
+        self.arm()
+        self.takeoff()
 
     def obtainControl(self):
+        print "Obtaining Control"
         self.drone.request_sdk_permission_control()
+        time.sleep(2)
 
     def releaseControl(self):
         self.drone.release_sdk_permission_control()
+        time.sleep(2)
 
     def arm(self):
+        print "Armed"
     	self.drone.arm_drone()
+        time.sleep(10)
 
     def disarm(self):
     	self.drone.disarm_drone()
+        time.sleep(2)
 
     def takeoff(self):
+        print "Taking off"
     	self.drone.takeoff()
 
     def land(self):
