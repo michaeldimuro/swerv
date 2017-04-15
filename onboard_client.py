@@ -4,8 +4,10 @@ import math
 from SwervDrone import Drone
 
 def main():
-	print "Should be running"
+	print "Starting Application.."
 	drone = Drone()
+	drone.mission.execute(drone)
+	print "-----------\nMission Success"
 
 
 if __name__ == "__main__":
